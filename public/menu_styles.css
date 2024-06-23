@@ -1,0 +1,301 @@
+@font-face{
+  
+  font-family: camp;
+  src: url(/camp.ttf);
+
+}
+@font-face{
+font-family: daylove;
+  src: url(/daylove.ttf);
+}
+/* Body styles */
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Paragraph styles */
+p {
+  color: cornsilk;
+  transition: all 0.5s ease;
+}
+
+/* Food item styles */
+.food-item {
+  background-color: #000000;
+  width: 30%;
+  height: 40%;
+  margin: 15px;
+  border: 1px solid #000000;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+/* Blurred background when popup is active */
+.bgblur#blur.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Food image styles */
+.food-image {
+  max-width: 70%;
+  height: 200px;
+}
+
+/* Food price styles */
+.food-price {
+  margin-top: 10%;
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* Order button styles */
+.order-button {
+  margin-top: 10%;
+  margin-bottom: 0%;
+  background-color: #ff0000; /* Red */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px auto;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.5s;
+  border-radius: 200px;
+}
+
+.order-button:hover {
+  border-radius: 200px;
+  transition: 0.5s;
+  color: #000000;
+  background-color: rgb(255, 244, 86); /* Dark gray */
+  padding: 15px 25px;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 40px;
+  color: antiquewhite;
+  transition: all 0.5s ease;
+}
+
+h1:hover,
+p:hover,
+.food-price:hover,
+.food-image:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+/* Navbar styles */
+.navbar ul {
+  position: sticky;
+  list-style-type: none;
+  display: flex;
+  justify-content: right; /* Aligns links to the right */
+}
+
+.navbar li a {
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: background-color 0.7s ease; /* Smooth transition for hover effect */
+}
+
+.navbar li a:hover {
+  background-color: #ff2121; /* Darker background color on hover */
+}
+
+/* Navbar image styles */
+.navbar img {
+  height: 70px; /* Adjust the height as needed */
+  position: absolute;
+}
+
+/* Popup window styles */
+#popup {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  padding: 50px;
+  border-radius: 1.5rem;
+  box-shadow: 0 5px 30px rgb(245, 245, 245);
+  background-color: hsla(0, 0%, 0%, 0.1);
+  border: 2px solid hsl(0, 0%, 0%);
+  color: #ffffffa6;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popup.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/* Popup order button styles */
+#order{
+  background-color: #f51010; /* Red */
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.5s;
+  border-radius: 20px;
+  margin-left: 1%;
+  margin-top: -1cm;
+  transition: 0.5s;
+}
+#order:hover {
+  border-radius: 200px;
+  transition: 0.5s;
+  color: #000000;
+  background-color: rgb(255, 244, 86); /* Dark gray */
+  padding: 15px 25px;
+}
+#cancle{
+  margin-top: 10%;
+  background-color: #434343d9; /* Red */
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;  
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.5s;
+  border-radius: 20px;
+  margin-left: 3cm;
+  transition: 0.5s;
+}
+
+#cancle:hover {
+  border-radius: 200px;
+  transition: 0.5s;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0); /* Dark gray */
+  padding: 15px 25px;
+}
+
+
+/* placed */
+#popupf {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  padding: 50px;
+  border-radius: 1.5rem;
+  box-shadow: 0 5px 30px rgb(245, 245, 245);
+  background-color: hsla(0, 0%, 0%, 0.1);
+  border: 2px solid hsl(0, 0%, 0%);
+  color: #ffffffa6;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popupf.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#popupf p{
+  text-align: center;
+  font-family: camp;
+  font-size: 1cm;
+  margin-top: 0.4cm;
+}
+#popupf h2{
+  text-align: center;
+  margin-top: -1cm;
+  margin-bottom: -0.3cm;
+  font-size: 1cm;
+}
+
+
+#item_name {
+  margin: -10; /* Remove margins */
+  margin-left: -1.3cm;
+  padding: -10; /* Remove padding */
+  width: 150%; /* Increase width to 10cm */
+  height: 150%; /* Increase height to 4cm */
+  background-color: #ff000000;
+  color: #dee5f5;
+  border: none;
+  font-size: 1.5cm; /* Increase font size */
+  text-align: center;
+  font-family: camp;
+  
+}
+
+#incre {
+  font-size: 0.5cm;
+  width: 0.7cm;
+  height: 0.7cm;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  border-radius: 5cm;
+}
+#decre {
+  font-size: 0.5cm;
+  width: 0.7cm;
+  height: 0.7cm;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  border-radius: 5cm;
+}
+#numberInput{
+
+  margin-left: 2cm;
+  margin-top: -50cm;
+  padding: -10; /* Remove padding */
+  width: 30%; /* Increase width to 10cm */
+  height: 50%; /* Increase height to 4cm */
+  background-color: #ff000000;
+  color: #dee5f5;
+  border: none;
+  font-size: 0.7cm; /* Increase font size */
+  text-align: center;
+}

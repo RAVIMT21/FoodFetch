@@ -1,0 +1,157 @@
+@font-face{
+  font-family: daylove;
+  src: url(/daylove.ttf);
+  font-family: camp;
+  src: url(/camp.ttf);
+
+}
+
+.alert{
+  color: rgb(235, 20, 20);
+}
+body {
+  background: url("/fired rice.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+/* form */
+.form-container {
+  background-color: hsl(0, 0%, 0%);
+  border: 2px solid hsl(0, 0%, 0%);
+  color: hsla(0, 0%, 0%, 0.897);
+  border-radius: 2.5rem;
+  padding: 2.5rem 2rem 3.5rem;
+  width: 25.25rem;
+  margin: 8% auto; /* Changed margin settings for centering */
+  transition: all 2s; /* Applied transition to all properties */
+}
+
+.form-container:hover {
+  background-color: hsla(0, 100%, 52%, 0);
+  border: 2px solid hsl(0, 0%, 0%);
+  color: hsla(0, 12%, 94%, 0.897);
+  border-radius: 1000cm;
+  backdrop-filter: blur(10px);
+  padding: 2.5rem 2rem 3.5rem;
+  width: 7cm;
+  height: 7cm;
+ transition-duration: 1s;
+  
+}
+.link{
+  color: #000000;
+}
+
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .form-container img {
+    
+    width: 50px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 2px; /* Add margin to separate from the heading */
+    
+    margin-left: 41.5%;
+    margin-bottom: -4%;
+    
+}
+.form-group img{
+  width: 9%;
+  height: 9%;
+  margin-left: 0%;
+  margin-bottom: -5%;
+}
+.form-group ::placeholder{
+  color: rgb(14, 14, 14);
+}
+  .form-group input { 
+    width: 70%;
+  padding: 8px;
+  font-size: 16px;
+
+  border: none; /* Add your border color */
+  border-bottom: 2px solid black;
+  background-color: transparent; /* Make background transparent */
+  border-radius: 3px;
+  color: #fffdfd; /* Add text color if needed */
+  }
+
+  .submit-btn {
+ margin-top: 3%;
+ margin-bottom: 3%;
+    background-color: #ebf379;
+    color: #090707;
+    font-family: camp;
+    font-size: 250%;
+    border-radius: 20px;
+    margin-left: 30%;
+    width: 40%;
+    padding: 5px;
+    border: none;
+    transition: 600ms;
+    
+  }
+
+  .submit-btn:hover {
+    display: block;
+    width: 90%;
+    font-size: 290%;
+    padding: 2px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 200px;
+    cursor: pointer;
+    margin-left: 3%;
+    transition: 600ms;
+
+
+  }
+  
+
+  p {
+    margin-top: 2  px;
+    margin-left: 20%;
+  }
+
+.moto{
+  position: absolute;
+  width: 20cm;
+  border: #000000;
+  margin-top: 2cm;
+  margin-left: 2cm;
+}
+
+.chef{
+  position: absolute;
+  width: 25%;
+  height: 60%;
+}
+
+
+.dia{
+  position: absolute;
+  font-family: daylove;
+  font-size: 300%;
+  color: #d8d7df;
+  text-shadow: #000000;
+  text-align: center;
+  margin-top:   1cqmin;
+  margin-left: 7cm;
+}

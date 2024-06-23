@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>SignUp</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/login_styles.css">
+</head>
+<body>
+  
+    <!-- SignUp Form Container -->
+    <div class="form-container">
+        <h2>SignUp</h2> <!-- Heading for SignUp -->
+        <!-- SignUp Form -->
+        <form action="/signup" method="post">
+            <!-- Form Group for Name -->
+            <div class="form-group">
+                <label for="name">Name:</label> <!-- Label for Name input -->
+                <input type="text" id="yourname" name="username" placeholder="Enter your name" required autocomplete="off"> <!-- Name input -->
+            </div>
+            <!-- Form Group for Password -->
+            <div class="form-group">
+                <label for="password">Password:</label> <!-- Label for Password input -->
+                <input type="password" id="pass" name="password" placeholder="Password" required> <!-- Password input -->
+            </div>
+            
+            <% if (typeof errorMessage !== 'undefined') { %>
+                <div class="alert"><%= errorMessage %></div>
+              <% } %>
+            
+            <button type="submit" class="submit-btn">Submit</button> <!-- Submit button -->
+        </form>
+    </div>
+    
+</body>
+</html>

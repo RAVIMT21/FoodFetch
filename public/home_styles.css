@@ -1,0 +1,50 @@
+/* Set background properties */
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Navbar styling */
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: right; /* Aligns links to the right */
+}
+
+.navbar li a {
+  font-size: 20px;
+  color: #aca8a8;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: background-color 0.7s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for navbar links */
+.navbar li a:hover {
+  background-color: #ff2121; /* Darker background color on hover */
+}
+
+/* Image styling */
+.navbar img {
+  position: fixed;
+  height: 70px; /* Adjust the height as needed */
+  position: absolute; /* Overlapping position */
+  transition-delay: 10%; /* Delay for transition effect */
+}
+
+/* Heading styling */
+h1 {
+  position: relative;
+  left: 20px; /* Move the heading 20px to the right */
+  top: 70px; /* Move the heading 70px down */
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  stroke: #ffffff; /* Stroke color for text */
+}
+
+/* Hover effect for heading */
+h1:hover {
+  color: rgb(255, 0, 0); /* Change color on hover */
+}

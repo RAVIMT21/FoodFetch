@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Link to external JavaScript file -->
+    <script src="popup.js"></script>
+    <!-- Link to external CSS file for menu styles -->
+    <link rel="stylesheet" href="menu_styles.css">
+    <!-- Favicon for the webpage -->
+    <link rel="icon" href="/cooking.png" type="image/x-icon">
+    <!-- Responsive design meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Font Awesome library for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Food Items</title>
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <img src="/cooking.png" alt="Logo">
+        <ul>
+            <li><a href="/home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="/menu"><i class="fas fa-utensils"></i> Menu</a></li>
+        </ul>
+    </nav>
+</head>
+
+<body background="/767567.jpg">
+    <!-- Background blur effect container -->
+    <div class="bgblur" id="blur">
+        <!-- Food item: Burger -->
+        <div class="food-item">
+            <img class="food-image" src="/burger.jpeg" alt="Food 1">
+            <h1>Burger</h1>
+            <p><b>Ingredients: </b>Ground beef (80% lean is commonly used for juiciness), Burger buns, Salt and pepper, Optional toppings (lettuce, tomato, onion, cheese, pickles, etc.), Optional condiments (ketchup, mustard, mayonnaise, barbecue sauce, etc.)</p>
+            <div class="food-price">₹99</div>
+            <button class="order-button" onclick="toggle(this)" value="Burger">Order</button>
+        </div>
+
+        <!-- Food item: Chicken Biryani -->
+        <div class="food-item">
+            <img class="food-image" src="/chicken biryani.jpeg" alt="Food 2">
+            <h1>Chicken Biryani</h1>
+            <p><b>Ingredients: </b>Chicken, Basmati rice, Onions, Tomatoes, Ginger, Garlic, Green chilies, Yogurt, Lemon juice, Bay leaves, Cinnamon sticks, Cardamom pods, Cloves, Cumin seeds, Coriander powder, Turmeric powder, Red chili powder, Garam masala, Saffron, Milk, Ghee (clarified butter), Oil, Salt, Fresh coriander leaves (cilantro), Mint leaves.</p>
+            <div class="food-price">₹199</div>
+            <button class="order-button" onclick="toggle(this)" value="Chicken Biryani">Order</button>
+        </div>
+
+        <!-- Food item: Egg Curry -->
+        <div class="food-item">
+            <img class="food-image" src="/egg curry.jpeg" alt="Food 3">
+            <h1>Egg curry</h1>
+            <p><b>Ingredients: </b>oil, bay leaf, cardamoms, cinnamon, onions, green chili, ginger garlic paste, tomatoes, red chili powder, garam masala, coriander powder, turmeric, salt, water, fried eggs, kasuri methi, chopped coriander leaves, cream, cashews, water, sugar...</p>
+            <div class="food-price">₹99</div>
+            <button class="order-button" onclick="toggle(this)" value="Egg Curry">Order</button>
+        </div>
+
+        <!-- Food item: Prawns Curry -->
+        <div class="food-item">
+            <img class="food-image" src="/prawns curry.jpeg" alt="Food 1">
+            <h1>Prawns Curry</h1>
+            <p><b>Ingredients: </b>cumin, green chilli, curry leaves, garlic, prawns, water, coconut milk, coriander leaves</p>
+            <div class="food-price">₹199</div>
+            <button class="order-button" onclick="toggle(this)" value="Prawns Curry">Order</button>
+        </div>
+
+        <!-- Food item: Dosa -->
+        <div class="food-item">
+            <img class="food-image" src="/dosa.jpeg" alt="Food 2">
+            <h1>Dosa</h1>
+            <p><b>Ingredients: </b>Rice, Urad dal (split black gram), Fenugreek seeds, Salt, Water (for soaking and grinding), Oil ...</p>
+            <div class="food-price">₹49</div>
+            <button class="order-button" onclick="toggle(this)" value="Dosa">Order</button>
+        </div>
+
+        <!-- Food item: Fried Rice -->
+        <div class="food-item">
+            <img class="food-image" src="/fired rice.jpeg" alt="Food 3">
+            <h1>Fired rice</h1>
+            <p><b>Ingredients: </b>Chicken, Light soy sauce, Dark soy sauce, Salt, White pepper, Cooked rice, Eggs, Oil, Onions, Cornstarch, Sesame oil, Vegetables (optional), Chinese five-spice powder (optional), Garlic powder, Butter (optional), Veggies (carrots, white and green onions)...</p>
+            <div class="food-price">₹79</div>
+            <button class="order-button" onclick="toggle(this)" value="Fired Rice">Order</button>
+        </div>
+
+        <!-- Food item: Chapathi Chicken -->
+        <div class="food-item">
+            <img class="food-image" src="/chapathi chicken curry.jpeg" alt="Food 1">
+            <h1>Chapathi Chicken</h1>
+            <p><b>Ingredients: </b> chicken pieces, onions, tomatoes, garlic, ginger, green chilies, curry leaves, coriander powder, cumin powder, turmeric powder, garam masala, red chili powder, salt, oil, and fresh coriander leaves. First, marinate the chicken with salt, turmeric, and red chili powder</p>
+            <div class="food-price">₹99</div>
+            <button class="order-button" onclick="toggle(this)" value="Chapathi Chicken">Order</button>
+        </div>
+
+        <!-- Food item: Mutton Biryani -->
+        <div class="food-item">
+            <img class="food-image" src="/mutton biryani.jpeg" alt="Food 1">
+            <h1>Mutton Biryani</h1>
+            <p><b>Ingredients: </b>pieces of mutton marinated in a blend of yogurt and spices such as cumin, coriander, turmeric, and garam masala. Fragrant basmati rice is cooked separately with whole spices like cloves, cardamom, and cinnamon</p>
+            <div class="food-price">₹299</div>
+            <button class="order-button" onclick="toggle(this)" value="Mutton Biryani">Order</button>
+        </div>
+
+        <!-- Food item: Paneer Curry -->
+        <div class="food-item">
+            <img class="food-image" src="/panneer curry.jpeg" alt="Food 1">
+            <h1>Panneer Curry</h1>
+            <p><b>Ingredients: </b>paneer, onions finely chopped, tomatoes diced, garlic minced, ginger grated, green chilies sliced, ground turmeric, ground coriander, ground cumin, garam masala powder, salt to taste, oil or ghee for cooking, water, and fresh cilantro leaves for garnishing.</p>
+            <div class="food-price">₹99</div>
+            <button class="order-button" onclick="toggle(this)" value="Panneer Curry">Order</button>
+        </div>
+
+        <!-- Food item: Samosa -->
+        <div class="food-item">
+            <img class="food-image" src="/samosa.jpeg" alt="Food 1">
+            <h1>Samosa</h1>
+            <p><b>Ingredients: </b>potatoes, peas, onions, and spices such as cumin, coriander, turmeric, and garam masala, minced meat, lentils, or paneer cheese for added flavor and texture</p>
+            <div class="food-price">₹19</div>
+            <button class="order-button" onclick="toggle(this)" value="Samosa">Order</button>
+        </div>
+
+        <!-- Food item: Tandoori Chicken -->
+        <div class="food-item">
+            <img class="food-image" src="/thandoori chicken.jpeg" alt="Food 1">
+            <h1>Thandoori Chicken</h1>
+            <p><b>Ingredients: </b> yogurt, ginger, garlic, and various spices such as cumin, coriander, turmeric, paprika, and cayenne pepper. Additionally, ingredients like lemon juice, garam masala...</p>
+            <div class="food-price">₹199</div>
+            <button class="order-button" onclick="toggle(this)" value="Thandoori Chicken">Order</button>
+        </div>
+
+        <!-- Food item: Vada -->
+        <div class="food-item">
+            <img class="food-image" src="/vada.jpeg" alt="Food 1">
+            <h1>Vada</h1>
+            <p><b>Ingredients: </b>soaked and ground urad dal (black gram lentils) combined with finely chopped onions, green chilies, ginger, curry leaves, and sometimes grated coconut...</p>
+            <div class="food-price">₹49</div>
+            <button class="order-button" onclick="toggle(this)" value="Vada">Order</button>
+        </div>
+    </div>
+
+    <!-- Popup form for ordering -->
+    <div id="popup">
+        <form action="/ordered" method="post">
+            <!-- Readonly input field for selected item -->
+            <input type="text" name="order_item" id="item_name" value="" readonly><br><br>
+
+            <!-- Quantity increment and decrement buttons -->
+            <button type="button" onclick="decrement()" id="decre">-</button>
+            <input type="text" id="numberInput" name="quantity" value="1">
+            <button type="button" onclick="increment()" id="incre">+</button>
+            
+            <!-- Cancel and order buttons -->
+            <button type="button" id="cancle" onclick="toggle(this)">Cancel</button>
+            <button type="submit" id="order" onclick="toggleOrderPlacedPopup(this)">Order</button>
+        </form>
+    </div>
+
+    <!-- Popup message for order confirmation -->
+    <div id="popupf">
+        <p>Your order has been placed</p>
+        <h2>Have a Good Day</h2>
+        <br><br>
+        <button onclick="window.location.href='/menu'" class="order-button">Close</button>
+    </div>
+</body>
+</html>
